@@ -101,4 +101,7 @@ const CONTRACT_ADDRESS = import.meta.env.VITE_CONTRACT_ADDRESS;
 
 const PROVIDER_URL = import.meta.env.VITE_PROVIDER_URL;
 
+console.log("Contract address:", CONTRACT_ADDRESS);
+console.log("Provider URL:", PROVIDER_URL);
+
 export const dvdService = new DvdService(CONTRACT_ADDRESS, PROVIDER_URL);
