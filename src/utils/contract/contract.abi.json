@@ -156,63 +156,12 @@
 	},
 	{
 		"inputs": [],
-		"name": "getBalance",
+		"name": "getOwnerAddress",
 		"outputs": [
 			{
-				"internalType": "uint256",
+				"internalType": "address",
 				"name": "",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "_id",
-				"type": "uint256"
-			}
-		],
-		"name": "getDvD",
-		"outputs": [
-			{
-				"components": [
-					{
-						"internalType": "uint256",
-						"name": "d_id",
-						"type": "uint256"
-					},
-					{
-						"internalType": "string",
-						"name": "d_title",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "numCopy",
-						"type": "uint256"
-					},
-					{
-						"internalType": "enum DvdManagement.StatutDvd",
-						"name": "statut",
-						"type": "uint8"
-					},
-					{
-						"internalType": "address",
-						"name": "currentOwner",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "price",
-						"type": "uint256"
-					}
-				],
-				"internalType": "struct DvdManagement.dvd",
-				"name": "",
-				"type": "tuple"
+				"type": "address"
 			}
 		],
 		"stateMutability": "view",
@@ -226,51 +175,6 @@
 				"internalType": "address",
 				"name": "",
 				"type": "address"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "seePurchase",
-		"outputs": [
-			{
-				"components": [
-					{
-						"internalType": "uint256",
-						"name": "d_id",
-						"type": "uint256"
-					},
-					{
-						"internalType": "string",
-						"name": "d_title",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "numCopy",
-						"type": "uint256"
-					},
-					{
-						"internalType": "enum DvdManagement.StatutDvd",
-						"name": "statut",
-						"type": "uint8"
-					},
-					{
-						"internalType": "address",
-						"name": "currentOwner",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "price",
-						"type": "uint256"
-					}
-				],
-				"internalType": "struct DvdManagement.dvd[]",
-				"name": "",
-				"type": "tuple[]"
 			}
 		],
 		"stateMutability": "view",

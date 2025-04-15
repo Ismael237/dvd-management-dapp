@@ -7,7 +7,7 @@ export interface RawDVD extends Omit<DVD, "statut"> {
 }
 
 interface IDvdManagement extends BaseContract {
-    owner(): Promise<string>;
+    getOwnerAddress(): Promise<string>;
     addDvD(title: string, numCopy: number, price: bigint): Promise<TransactionResponse>;
     deleteDvD(id: number): Promise<TransactionResponse>;
     updateDvD(id: number, title: string, numCopy: number): Promise<TransactionResponse>;
@@ -92,7 +92,7 @@ export class DvdService {
     }
 
     async getOwnerAddress(): Promise<string> {
-        return await this.contract.owner();
+        return await this.contract.getOwnerAddress();
     }
 }
 
